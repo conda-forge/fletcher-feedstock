@@ -14,9 +14,8 @@ Summary: Pandas ExtensionDType/Array backed by Apache Arrow
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fletcher-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fletcher-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/fletcher-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fletcher-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/fletcher-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/fletcher-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/fletcher-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/fletcher-feedstock)
 
 Current release info
 ====================

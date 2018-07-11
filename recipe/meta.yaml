@@ -1,6 +1,6 @@
 {% set name = "fletcher" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "a1d46ad18f0667180cc497d560ab0bd78921d7aaf426ea382c6e22a1ca5d29dd" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "92c77c0456fe8c07e2480ae86acdffc8b6851325f1ff491d4ded510882e87c17" %}
 
 package:
   name: {{ name|lower }}
@@ -13,11 +13,7 @@ source:
 build:
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
-  # Remove these skips and add `noarch: python` once this lives in its own
-  # feedstock. We need these definitions as otherwise the Windows build will
-  # not succeed as arrow-cpp is not available for Win+Py2.7.
-  skip: true  # [win32]
-  skip: true  # [win and py<35]
+  noarch: python
 
 requirements:
   host:
