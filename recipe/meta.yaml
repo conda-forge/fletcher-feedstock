@@ -1,6 +1,6 @@
 {% set name = "fletcher" %}
-{% set version = "0.1.2" %}
-{% set sha256 = "92c77c0456fe8c07e2480ae86acdffc8b6851325f1ff491d4ded510882e87c17" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "7549508cff74fdfd0b2af952a72c19eccdadb27d38dab0d3d060d350ae583314" %}
 
 package:
   name: {{ name|lower }}
@@ -19,16 +19,13 @@ requirements:
   host:
     - python
     - pip
-    - numba
-    - pandas >=0.23
-    - pyarrow >=0.9
     - setuptools_scm
     - six
   run:
     - numba
     - python
-    - pandas >=0.23
-    - pyarrow >=0.9
+    - pandas >=0.24
+    - pyarrow >=0.11
     - six
 
 test:
