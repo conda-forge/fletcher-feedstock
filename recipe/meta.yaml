@@ -1,6 +1,6 @@
 {% set name = "fletcher" %}
-{% set version = "0.2.0" %}
-{% set sha256 = "7549508cff74fdfd0b2af952a72c19eccdadb27d38dab0d3d060d350ae583314" %}
+{% set version = "0.3.0" %}
+{% set sha256 = "3f1b5c8b9d218eb6a051c8f3a820cf71a7c6fff5950829899474435fe2843c5f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
@@ -20,24 +20,26 @@ requirements:
     - python
     - pip
     - setuptools_scm
-    - six
   run:
     - numba
     - python
-    - pandas >=0.24
-    - pyarrow >=0.11
-    - six
+    - pandas >=0.25
+    - pyarrow >=0.15
 
 test:
   imports:
     - fletcher
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/xhochy/fletcher
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pandas ExtensionDType/Array backed by Apache Arrow'
+  summary: Pandas ExtensionDType/Array backed by Apache Arrow
   doc_url: https://fletcher.readthedocs.io/
 
 extra:
