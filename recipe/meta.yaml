@@ -20,17 +20,19 @@ requirements:
     - python
     - pip
     - setuptools_scm
-    - six
   run:
     - numba
     - python
-    - pandas >=0.24
-    - pyarrow >=0.11
-    - six
+    - pandas >=0.25
+    - pyarrow >=0.15
 
 test:
   imports:
     - fletcher
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/xhochy/fletcher
