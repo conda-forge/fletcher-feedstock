@@ -1,6 +1,6 @@
 {% set name = "fletcher" %}
-{% set version = "0.3.0" %}
-{% set sha256 = "3f1b5c8b9d218eb6a051c8f3a820cf71a7c6fff5950829899474435fe2843c5f" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "6252a94ee8d03fb8a3c0a82f7d9f62165eedcb54bd8db5ceacb14b9848cea5e3" %}
 
 package:
   name: {{ name|lower }}
