@@ -10,7 +10,7 @@ source:
   sha256: 06b7473c655e28ab4646515e5f26436f1b388cba0da430c4d6fd7d651518c6c4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -20,10 +20,10 @@ requirements:
     - pip
     - setuptools_scm
   run:
-    - numba
     - python
-    - pandas >=0.25
-    - pyarrow >=0.15
+    - numba >=0.49
+    - pandas >=1.0
+    - pyarrow >=0.17
 
 test:
   imports:
