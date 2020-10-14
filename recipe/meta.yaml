@@ -1,5 +1,5 @@
 {% set name = "fletcher" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 611111e657861331dec1cf2a456a4a00afc58af92c79da8863449b20f6d58eac
+  sha256: 9cc1642c62e516868e735f9259072c898fe47c154fffcb1f0d0871a38aee17cb
 
 build:
   number: 0

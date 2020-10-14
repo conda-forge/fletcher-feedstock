@@ -5,11 +5,11 @@ Home: https://github.com/xhochy/fletcher
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fletcher-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pandas ExtensionDType/Array backed by Apache Arrow
 
-
+Documentation: https://fletcher.readthedocs.io/
 
 Current build status
 ====================
