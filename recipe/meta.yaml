@@ -10,17 +10,17 @@ source:
   sha256: b646d0a69118ea9f95a62423d139afaa0f404da388bf0106735cfe7d4fb876b6
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools-scm
   run:
-    - python
+    - python >=3.6
     - numba >=0.49
     - pandas >=1.0
     - pyarrow >=0.17
